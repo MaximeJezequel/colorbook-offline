@@ -40,20 +40,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .home-card {
   width: 50vw;
   height: 50vw;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 2rem;
+  margin: 1rem;
   background-color: white;
   border-radius: 1rem;
-
-  &:hover {
-    border-color: red;
-  }
 
   img {
     height: 100%;
@@ -101,7 +97,7 @@ body {
   width: min(calc(100vw / 8), 60px);
   height: min(calc(100dvw / 8), 60px);
   width: min(calc(100dvw / 8), 60px);
-  margin: 2vw;
+  margin: 1vw;
   border: 5px solid black;
   border-radius: 15px;
 }

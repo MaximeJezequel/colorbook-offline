@@ -14,11 +14,8 @@ export const Palette = ({
       onClick={() => {
         changeColor(color)
       }}
-    >
-      <div
-        className={`color-swatch ${activeClass}`}
-        style={{ backgroundColor: color }}
-      ></div>
-    </div>
+      className={`color-swatch ${activeClass}`}
+      style={{ backgroundColor: color }}
+    ></div>
   )
 }
