@@ -17,9 +17,9 @@ export default defineConfig({
         display: "standalone",
         scope: "/",
         start_url: "/",
-        short_name: "React PWA",
-        description: "Vite React PWA",
-        name: "Vite React PWA",
+        short_name: "Color Match",
+        description: "Color Match",
+        name: "Color Match",
         icons: [
           {
             src: "/icon-192x192.png",
