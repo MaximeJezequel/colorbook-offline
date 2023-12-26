@@ -37,7 +37,6 @@ body {
 .home-container {
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
@@ -47,7 +46,6 @@ body {
   width: 50vw;
   height: 50vw;
   padding: 2rem;
-  margin: 1rem;
   background-color: white;
   border-radius: 1rem;
 
@@ -143,8 +141,8 @@ body {
   }
 
   .home-card {
-    width: 50vh;
-    height: 50vh;
+    width: 40vh;
+    height: 40vh;
   }
 
   .home-banner img {
