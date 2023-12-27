@@ -1,5 +1,6 @@
 import { useState } from "react";
 import eraser from "./assets/eraser.png";
+import home from "./assets/home.png";
 import { Esp } from "./components/Esp";
 import { Home } from "./components/Home";
 import { Palette } from "./components/Palette";
@@ -20,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       {choice == 0 && <Home setChoice={setChoice} />}
       {(choice == 1 || choice == 2 || choice == 3) && (
         <div>
@@ -40,6 +41,7 @@ function App() {
                 setCurrentColor("white");
               }}
             >
+              {/* <img className="color-swatch small" src={home} /> */}
               <img className="color-swatch small" src={eraser} />
             </div>
           </div>
