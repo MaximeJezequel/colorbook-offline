@@ -20,6 +20,7 @@ export const Home = ({ setChoice }: { setChoice: any }) => {
           <Swiper
             effect={"cards"}
             grabCursor={true}
+            loop={true}
             initialSlide={1}
             modules={[EffectCards]}
             className="mySwiper"
