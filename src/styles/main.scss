@@ -29,6 +29,7 @@ body {
     background-position: 50%;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 
     .home-banner {
       width: 100vw;
@@ -42,13 +43,15 @@ body {
     .home-wrapper {
       width: 100vw;
       height: 85vh;
-      margin-top: 15vh;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
 
       .home-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30vh;
         height: 30vh;
         padding: 2rem;
@@ -56,8 +59,8 @@ body {
         border-radius: 1rem;
 
         img {
-          height: 100%;
-          width: 100%;
+          height: min(100%, 220px);
+          width: min(100%, 220px);
         }
       }
     }
@@ -189,6 +192,8 @@ body {
         }
       }
       .home-wrapper {
+        margin-top: 15vh;
+
         .home-card {
           width: 20vw;
           height: 20vw;
