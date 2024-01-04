@@ -1,6 +1,6 @@
 import { useState } from "react";
 import eraser from "./assets/eraser.png";
-import home from "./assets/home.png";
+import goback from "./assets/back.png";
 import { Esp } from "./components/Esp";
 import { Home } from "./components/Home";
 import { Palette } from "./components/Palette";
@@ -19,6 +19,10 @@ function App() {
     newFillColors[i] = currentColor;
     setFillColors(newFillColors);
   };
+
+  const goToHome = () => {
+    location.reload();
+  }
 
   return (
     <div>
@@ -41,8 +45,15 @@ function App() {
                 setCurrentColor("white");
               }}
             >
-              {/* <img className="color-swatch small" src={home} /> */}
               <img className="color-swatch small" src={eraser} />
+            </div>
+            <div
+              className="goback"
+              onClick={() => {
+                goToHome();
+              }}
+            >
+              <img className="color-swatch small" src={goback} />
             </div>
           </div>
           <div className="color-swatch-container">
